@@ -470,20 +470,20 @@ function hestia_contact_get_old_content( $theme_mod ) {
  * @access public
  */
 function hestia_the_footer_content() {
-	$hestia_general_credits = get_theme_mod( 'hestia_general_credits',
-		/* translators: %1$s is Theme Name, %2$s is WordPress */
-		sprintf( esc_html__( '%1$s | Powered by %2$s', 'hestia' ),
-			/* translators: %s is Theme name */
-			sprintf( '<a href="https://themeisle.com/themes/hestia/" target="_blank" rel="nofollow">%s</a>',
-				esc_html__( 'Hestia', 'hestia' )
-			),
-			/* translators: %s is WordPress */
-			sprintf( '<a href="%1$s" rel="nofollow">%2$s</a>',
-				esc_url( __( 'http://wordpress.org', 'hestia' ) ),
-				esc_html__( 'WordPress', 'hestia' )
-			)
-		)
-	);
+	// $hestia_general_credits = get_theme_mod( 'hestia_general_credits',
+	// 	/* translators: %1$s is Theme Name, %2$s is WordPress */
+	// 	sprintf( esc_html__( '%1$s | Powered by %2$s', 'hestia' ),
+	// 		/* translators: %s is Theme name */
+	// 		sprintf( '<a href="https://themeisle.com/themes/hestia/" target="_blank" rel="nofollow">%s</a>',
+	// 			esc_html__( 'Hestia', 'hestia' )
+	// 		),
+	// 		/* translators: %s is WordPress */
+	// 		sprintf( '<a href="%1$s" rel="nofollow">%2$s</a>',
+	// 			esc_url( __( 'http://wordpress.org', 'hestia' ) ),
+	// 			esc_html__( 'WordPress', 'hestia' )
+	// 		)
+	// 	)
+	// );
 
 	$footer_has_widgets = is_active_sidebar( 'footer-one-widgets' ) || is_active_sidebar( 'footer-two-widgets' ) || is_active_sidebar( 'footer-three-widgets' ); ?>
 	<footer class="footer footer-black footer-big">
