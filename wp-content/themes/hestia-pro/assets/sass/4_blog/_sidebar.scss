@@ -1,0 +1,53 @@
+.single aside.blog-sidebar {
+  padding: 40px 0;
+}
+
+.widget {
+  margin-bottom: 30px;
+  ul {
+    padding: 0 0 0 10px;
+    margin: 0;
+    list-style: none;
+    li {
+      line-height: 2em;
+      padding-top: 5px;
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+  }
+}
+
+aside .widget a {
+  color: #23527c;
+  font-weight: 500;
+}
+
+.widget {
+  a:hover {
+    color: $color-primary-hover;
+  }
+  #searchform {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  h5 {
+    font-family: $secondary-font;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    font-weight: 700;
+    line-height: 1.4em;
+  }
+  select {
+    width: 100%;
+  }
+}
+
+.hestia-widget-placeholder {
+  border: 1px dashed #b4b9be;
+  padding: 25px;
+  text-align: center;
+  .widget {
+    margin: 0;
+  }
+}

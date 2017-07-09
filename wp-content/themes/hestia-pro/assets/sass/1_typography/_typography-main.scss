@@ -1,0 +1,205 @@
+body {
+  direction: ltr;
+  color: $color-secondary;
+  font-family: $primary-font;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $primary-font;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+a {
+  @extend %transition-all-3s-ease;
+  color: $color-primary;
+  &:hover, &:focus {
+    color: $color-primary-hover;
+    text-decoration: none;
+  }
+}
+
+blockquote p {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 3.8em;
+  line-height: 1.15em;
+}
+
+h2 {
+  font-size: 2.6em;
+}
+
+h3 {
+  margin: 20px 0 10px;
+  font-size: 1.825em;
+  line-height: 1.4em;
+}
+
+h4 {
+  font-size: 17px;
+  line-height: 1.55em;
+}
+
+h5 {
+  margin-bottom: 15px;
+  font-size: 1.25em;
+  line-height: 1.55em;
+}
+
+h6 {
+  font-size: 0.9em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.hestia-title, .title, .card-title, .info-title, .footer-brand, .footer-big h4, .footer-big h5, .media .media-heading {
+  font-family: $secondary-font;
+  font-weight: 700;
+  &, a {
+    color: $color-secondary;
+    text-decoration: none;
+    word-wrap: break-word;
+  }
+}
+
+h2.title,
+h2.hestia-title,
+h1.title,
+h1.hestia-title {
+  margin-bottom: 30px;
+}
+
+.carousel {
+  h1.hestia-title,
+  h2.title {
+    font-family: $primary-font;
+    font-size: 4.8em;
+    line-height: 1.15em;
+  }
+
+  span.sub-title {
+    display: block;
+    margin: 10px 0 60px;
+    font-family: $secondary-font;
+    font-size: 1.3em;
+    line-height: 1.4em;
+  }
+
+  .buttons a {
+    padding: 17px 35px;
+    font-size: 14px;
+  }
+}
+
+.description, .card-description, .footer-big {
+  color: $color-body-text;
+}
+
+.subscribe-description {
+  color: #efefef;
+}
+
+.text-warning {
+  color: $color-warning;
+}
+
+.text-primary {
+  color: $color-primary;
+}
+
+.text-danger {
+  color: $color-danger;
+}
+
+.text-success {
+  color: $color-success;
+}
+
+.text-info {
+  color: $color-info;
+}
+
+.text-rose {
+  color: $color-rose;
+}
+
+.text-gray {
+  color: $color-body-text;
+}
+
+.tooltip {
+  &.in {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0px, 0);
+    -ms-transform: translate3d(0, 0px, 0);
+    transform: translate3d(0, 0px, 0);
+  }
+  opacity: 0;
+  -webkit-transition: opacity,-webkit-transform 0.2s ease;
+  transition: opacity,-webkit-transform 0.2s ease;
+  transition: opacity,transform 0.2s ease;
+  transition: opacity,transform 0.2s ease,-webkit-transform 0.2s ease;
+  -webkit-transform: translate3d(0, 5px, 0);
+  -ms-transform: translate3d(0, 5px, 0);
+  transform: translate3d(0, 5px, 0);
+  &.left .tooltip-arrow {
+    border-left-color: #fff;
+  }
+  &.right .tooltip-arrow {
+    border-right-color: #fff;
+  }
+  &.top .tooltip-arrow {
+    border-top-color: #fff;
+  }
+  &.bottom .tooltip-arrow {
+    border-bottom-color: #fff;
+  }
+}
+
+.tooltip-inner {
+  min-width: 130px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  color: #555;
+  background: #fff;
+  -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+  line-height: 1.5em;
+  text-transform: none;
+}
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  &:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */
+  }
+}

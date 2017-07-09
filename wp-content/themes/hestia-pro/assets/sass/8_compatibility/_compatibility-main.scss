@@ -1,0 +1,30 @@
+/*--------------------------------------------------------------
+## WPML
+--------------------------------------------------------------*/
+footer .wpml-ls-item-legacy-dropdown a,
+footer .wpml-ls-item-legacy-dropdown-click a{
+  color: #000000;
+}
+
+.wpml-ls-statics-footer{
+  margin: 0 auto;
+}
+
+/*--------------------------------------------------------------
+## BBPress Basic
+--------------------------------------------------------------*/
+.bbp-template-notice.info {
+  max-width: inherit;
+}
+#bbpress-forums p.bbp-topic-meta img.avatar, #bbpress-forums ul.bbp-reply-revision-log img.avatar, #bbpress-forums ul.bbp-topic-revision-log img.avatar, #bbpress-forums div.bbp-template-notice img.avatar, #bbpress-forums .widget_display_topics img.avatar, #bbpress-forums .widget_display_replies img.avatar {
+  margin-bottom: 0;
+}
+
+.bbpress.blog-post .section-text p {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+#wp-link-close {
+  box-shadow: none
+}

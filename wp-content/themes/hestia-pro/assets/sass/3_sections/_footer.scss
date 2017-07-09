@@ -1,0 +1,91 @@
+.footer {
+  .widget h5 {
+    margin-bottom: 20px;
+  }
+}
+
+.footer-big {
+  color: $color-body-text;
+  padding: 30px 0 18px;
+  text-align: center;
+
+  ul {
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+    
+    li {
+      a {
+        display: inline-block;
+        position: relative;
+        padding: 5px 0;
+        border-radius: 3px;
+        font-size: 12px;
+        font-weight: 500;
+        text-decoration: none;
+        text-transform: uppercase;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      .btn {
+        margin: 0;
+      }
+    }
+  }
+  
+  p {
+    color: $color-body-text;
+  }
+
+  .footer-menu li {
+    display: inline-block;
+    a {
+      padding: 15px;
+    }
+  }
+  .copyright {
+    padding: 15px 0;
+  }
+
+  .content {
+    text-align: left;
+  }
+
+  hr {
+    margin-top: 10px;
+  }
+}
+
+.footer-black {
+  background: #323437;
+  a {
+    opacity: 0.86;
+    color: #fff;
+    &:hover, &:focus {
+      opacity: 1;
+    }
+  }
+  h5, h4, i, .copyright {
+    color: #fff;
+  }
+  hr {
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.hestia-bottom-footer-content{
+  position: relative;
+}
+
+.hestia-center{
+  width: 100%;
+  text-align: center;
+}
+
+
+// Generate for each social network specific buttons code
+@each $current-social in $social-networks {
+  $i: index($social-networks, $current-social);
+  @include footer-menu-social-icons($current-social,nth($social-networks-colors,$i), nth($social-networks-icons,$i));
+}

@@ -1,0 +1,114 @@
+.search-no-results .search-form, .error404 .search-form {
+  margin-top: 40px;
+}
+
+#authors-on-blog {
+  padding: 80px 0;
+  .card-profile {
+    text-align: left;
+  }
+}
+
+.blog-post {
+  word-wrap: break-word;
+  .section-text {
+    padding-bottom: 0;
+    font-size: 1.2em;
+    p {
+      margin-bottom: 30px;
+      line-height: 1.8em;
+    }
+  }
+  .section-blog-info {
+    padding-top: 15px;
+
+    .entry-categories, .entry-tags {
+      word-break: break-all;
+      span {
+        display: inline-block;
+        margin: 5px;
+      }
+    }
+
+    .entry-categories a {
+      display: inline-block;
+      padding: 2px 2px;
+      color: #fff;
+    }
+
+    .card-profile {
+      margin-top: 0;
+      text-align: left;
+
+      .description {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+
+dl dd, pre {
+  margin-bottom: 30px;
+}
+
+.alignleft .avatar {
+  margin-right: 24px;
+  margin-right: 2.4rem;
+}
+
+.alignright .avatar {
+  margin-left: 24px;
+  margin-left: 2.4rem;
+}
+
+article.sticky h2:before {
+  content: "Featured: ";
+}
+
+img.centered, .aligncenter {
+  display: block;
+  margin: 0 auto 24px;
+  margin: 0 auto 2.4rem;
+}
+
+img.alignnone {
+  margin-bottom: 12px;
+  margin-bottom: 1.2rem;
+}
+
+.alignleft {
+  float: left;
+  text-align: left;
+}
+
+.alignright {
+  float: right;
+  text-align: right;
+}
+
+img.alignleft, .wp-caption.alignleft {
+  margin: 0 24px 24px 0;
+  margin: 0 2.4rem 2.4rem 0;
+}
+
+img.alignright, .wp-caption.alignright {
+  margin: 0 0 24px 24px;
+  margin: 0 0 2.4rem 2.4rem;
+}
+
+.wp-caption-text {
+  padding-top: 10px;
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.gallery-caption {
+  padding-top: 10px;
+}
+
+.bypostauthor {
+  display: block;
+}
